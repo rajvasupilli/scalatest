@@ -21,6 +21,7 @@ version := "1.0"
 // mostly only necessary if you intend to publish your library's binaries on a
 // place like Sonatype or Bintray.
 
+githubActor := "rajvasupilli"
 githubOwner := "rajvasupilli"
 githubRepository := "scalatest"
 
