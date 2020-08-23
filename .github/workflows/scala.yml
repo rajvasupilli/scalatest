@@ -26,7 +26,7 @@ jobs:
            "GitHub Package Registry",
            "maven.pkg.github.com",
            "raj.vasupilli@gmail.com",
-           "8bb1cabcbe66c20881080041b56c7b664cd4eccf")
+           "3bb4c3c8374e24031f32988c2c9e4a0981c8bd01")
         EOF 
        cat /home/ubuntu/.sbt/1.0/github.sbt
        
