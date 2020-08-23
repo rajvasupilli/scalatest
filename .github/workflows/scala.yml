@@ -20,13 +20,15 @@ jobs:
     - name: Credentials file
       run: |
        sudo mkdir -p /home/ubuntu/.sbt/1.0
+       cd /home/ubuntu/.sbt/1.0
+       touch github.sbt
        tee $HOME/.sbt/1.0/github.sbt <<-'EOF'
        credentials +=
          Credentials(
            "GitHub Package Registry",
            "maven.pkg.github.com",
            "raj.vasupilli@gmail.com",
-           "3bb4c3c8374e24031f32988c2c9e4a0981c8bd01")
+           "c9c371f4c582522e0aa92b69057839bd4dee7000")
         EOF 
        cat /home/ubuntu/.sbt/1.0/github.sbt
        
