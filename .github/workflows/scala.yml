@@ -17,20 +17,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Credentials file
-      run: |
-       sudo mkdir -p /home/ubuntu/.sbt/1.0
-       cd /home/ubuntu/.sbt/1.0
-       touch github.sbt
-       tee $HOME/.sbt/1.0/github.sbt <<-'EOF'
-       credentials +=
-         Credentials(
-           "GitHub Package Registry",
-           "maven.pkg.github.com",
-           "raj.vasupilli@gmail.com",
-           "51072f9b00acdb825501af97522a47bdacabbff3")
-        EOF 
-       cat /home/ubuntu/.sbt/1.0/github.sbt
        
     - name: Run tests
       run: sbt test
