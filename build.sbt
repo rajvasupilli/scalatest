@@ -25,7 +25,8 @@ githubActor := "rajvasupilli"
 githubOwner := "rajvasupilli"
 githubRepository := "scalatest"
 
-
+publishTo := Some("GitHub Package Registry" at "https://maven.pkg.github.com/rajvasupilli/scalatest")
+credentials += Credentials("GitHub Package Registry","maven.pkg.github.com","rajvasupilli","${{ secrets.TOKEN }}")
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
 libraryDependencies += "org.typelevel" %% "cats-core" % "2.0.0"
