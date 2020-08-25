@@ -23,8 +23,8 @@ jobs:
        git config user.email "raj.vasupilli@gmail.com"
        git config user.name "rajvasupilli"
        export GITHUB_TOKEN=999d7b9608fff6f7dda2d4729d021378918b892a
-       env:
-          GITHUB_TOKEN: ${{secrets.TOKEN}}
+      env:
+        GITHUB_TOKEN: ${{secrets.TOKEN}}
     
     - name: Run tests
       run: sbt test
