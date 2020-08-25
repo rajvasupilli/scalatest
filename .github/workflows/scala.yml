@@ -19,7 +19,10 @@ jobs:
         java-version: 1.8
       
     - name: Set the Token
-      run: export GITHUB_TOKEN=999d7b9608fff6f7dda2d4729d021378918b892a
+      run: |
+       git config user.email "raj.vasupilli@gmail.com"
+       git config user.name "rajvasupilli"
+       export GITHUB_TOKEN=999d7b9608fff6f7dda2d4729d021378918b892a
     
     - name: Run tests
       run: sbt test
